@@ -1,6 +1,7 @@
 <?php
-	$bips_invoice_api_key = 'your_invoice_api_key';
-	$price_per_article = 1; // $1 USD
+$bips_invoice_api_key = 'your_invoice_api_key';
+$price_per_article = 1; // $1 USD
+$currency = 'USD';
 /*
 Plugin Name: Bitcoin Paywall
 Plugin URI: https://bips.me/plugins#paywall
@@ -49,10 +50,11 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		{
 			global $bips_invoice_api_key;
 			global $price_per_article;
+			global $currency;
 
 			$fields = array(
 				'price' => $price_per_article,
-				'currency' => 'USD',
+				'currency' => $currency,
 				'item' => 'Paywall'
 			);
 
@@ -93,7 +95,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		}
 		else
 		{
-			wp_register_script('paywall-wordpress-js', WP_PLUGIN_URL . '/paywall-wordpress/js.js');
+			wp_register_script('paywall-wordpress-js', WP_PLUGIN_URL . '/Paywall-WordPress/js.js');
 			wp_enqueue_script('paywall-wordpress-js');
 		}
 	}
@@ -102,7 +104,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	add_action('wp_head', 'paywall_head');
 	function paywall_head()
 	{
-		$str_css_url = WP_PLUGIN_URL . "/paywall-wordpress/style.css";
+		$str_css_url = WP_PLUGIN_URL . "/Paywall-WordPress/style.css";
 		echo '<link rel="stylesheet" href="' . $str_css_url . '" type="text/css" media="screen" />'."\n";
 	}
 
