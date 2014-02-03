@@ -95,7 +95,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		}
 		else
 		{
-			wp_register_script('paywall-wordpress-js', WP_PLUGIN_URL . '/Paywall-WordPress/js.js');
+			wp_register_script('paywall-wordpress-js', WP_PLUGIN_URL . '/Paywall-WordPress-master/js.js');
 			wp_enqueue_script('paywall-wordpress-js');
 		}
 	}
@@ -104,7 +104,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	add_action('wp_head', 'paywall_head');
 	function paywall_head()
 	{
-		$str_css_url = WP_PLUGIN_URL . "/Paywall-WordPress/style.css";
+		$str_css_url = WP_PLUGIN_URL . "/Paywall-WordPress-master/style.css";
 		echo '<link rel="stylesheet" href="' . $str_css_url . '" type="text/css" media="screen" />'."\n";
 	}
 
