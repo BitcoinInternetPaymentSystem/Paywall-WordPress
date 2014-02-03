@@ -1,0 +1,7 @@
+.paywall {
+	display: none;
+}
+
+.paywall-unlock {
+	cursor: pointer;
+}
