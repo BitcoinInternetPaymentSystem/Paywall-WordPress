@@ -27,5 +27,5 @@ Installation:
 	1. Install using WordPress built-in Add New Plugin installer;
 	2. Edit the plugin through the 'Plugins' menu in WordPress, and set BIPS Invoice API key + Price per Article; Press Update File.
 	3. Activate the plugin through the 'Plugins' menu in WordPress.
-	3. Place [paywall] and [/paywall] in your posts and pages to create a PayWall.
-	4. You can also set the text of the pay link by passing the parameter "paylink" like this: [paywall text="Pay to Read"]. In this case the text of the pay link would be "Pay to Read".
+	4. Place [paywall] and [/paywall] in your posts and pages to create a PayWall.
+	5. You can also set the text of the pay link by passing the parameter "paylink" like this: [paywall text="Pay to Read"]. In this case the text of the pay link would be "Pay to Read".
