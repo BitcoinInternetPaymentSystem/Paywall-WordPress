@@ -19,9 +19,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 About
-	Hide parts of the content of your posts or pages until paid by surrounding it with [paywall] and [/paywall] shortcode.
+=====
++ Hide parts of the content of your posts or pages until paid by surrounding it with [paywall] and [/paywall] shortcode.
 
 Installation:
+==========================
 	1. Install using WordPress built-in Add New Plugin installer;
 	2. Edit the plugin through the 'Plugins' menu in WordPress, and set BIPS Invoice API key + Price per Article; Press Update File.
 	3. Activate the plugin through the 'Plugins' menu in WordPress.
